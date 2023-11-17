@@ -1,4 +1,4 @@
-<?php
+<?p
 class Practical {
     // Static function to print "Hello, World!"
     public static function printHello() {
