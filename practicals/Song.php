@@ -7,12 +7,12 @@ class Song {
     private $tempo;
 
     // Constructor to initialize the Song object
-    public function __construct($title, $artist, $genre, $tempo) {
+    /*public function __construct($title, $artist, $genre, $tempo) {
         $this->title = $title;
         $this->artist = $artist;
         $this->genre = $genre;
         $this->tempo = $tempo;
-    }
+    }*/
 
     // Getter for the title property
     public function getTitle() {
@@ -56,15 +56,15 @@ class Song {
 }
 
 // Example usageof the Song class
-$mySong = new Song("Bohemian Rhapsody", "Queen", "Rock", "Medium");
-echo "Title: " . $mySong->getTitle() . "\n";
-echo "Artist: " . $mySong->getArtist() . "\n";
-echo "Genre: " . $mySong->getGenre() . "\n";
-echo "Tempo: " . $mySong->getTempo() . "\n";
+//$mySong = new Song("Bohemian Rhapsody", "Queen", "Rock", "Medium");
+//echo "Title: " . $mySong->getTitle() . "\n";
+//echo "Artist: " . $mySong->getArtist() . "\n";
+//echo "Genre: " . $mySong->getGenre() . "\n";
+//echo "Tempo: " . $mySong->getTempo() . "\n";
 
 // Modify song properties using setters
-$mySong->setTitle("New Title");
-$mySong->setArtist("New Artist");
-$mySong->setGenre("Pop");
-$mySong->setTempo("Fast");
+//$mySong->setTitle("New Title");
+//$mySong->setArtist("New Artist");
+//$mySong->setGenre("Pop");
+//$mySong->setTempo("Fast");
 ?>

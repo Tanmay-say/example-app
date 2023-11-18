@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Practicals\Song;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +26,19 @@ Route::get('/veggies', function () {
 Route::get('/veggies/{veggiesName}', function (string $veggiesName) {
 	return $veggiesName;
 })->whereIn('veggiesName', ['baigan','bhindi', 'aaloo', 'gobhi']);
+
+Route::get('/songs', function () {
+	$song1 = new Song();
+	$song1 -> setTitle("With you");
+	$song1 ->setArtist("A P Dhillon");
+
+	$song2 = new Song();
+	$song2 -> setTitle("My life");
+	$song2 ->setArtist("G P Nagpur");
+
+	$song3 = new Song();
+	$song3 -> setTitle("Libbas");
+	$song3 ->setArtist("KAKA");
+
+    return view('songs', [ 'songs'=> [ $song1 ,$song2 , $song3 ]]);
+});
