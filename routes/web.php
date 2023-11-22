@@ -45,6 +45,7 @@ Route::get('/songs_static', function () {
     return view('songs', [ 'songs'=> [ $song1 ,$song2 , $song3 ]]);
 });
 
+
 Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
 });
