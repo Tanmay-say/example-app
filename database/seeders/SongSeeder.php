@@ -9,9 +9,7 @@ use App\Models\Song;
 
 class SongSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+    
 
     public function run(): void
     {
