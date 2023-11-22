@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 use App\Models\Song;
 
 class SongSeeder extends Seeder
@@ -24,6 +25,16 @@ class SongSeeder extends Seeder
         Song::create([
             'artist' => 'A P Dhillon',
             'title' => 'With You',
+        ]);
+
+        Song::create([
+            'artist' => 'J D Daku',
+            'title' => 'May I got',
+        ]);
+
+        Song::create([
+            'artist' => 'A P Hello',
+            'title' => 'Jab we met ',
         ]);
 
     }

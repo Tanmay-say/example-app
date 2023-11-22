@@ -11,4 +11,12 @@ class Song extends Model
 
     // Add fillable field corresponding to database columns .
     protected $fillable=['title', 'artist'];
+
+    public function getTitle() {
+        return $this->title;
+    }
+
+    public function getArtist() {
+        return $this->artist;
+    }
 }
