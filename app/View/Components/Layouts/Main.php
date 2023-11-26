@@ -8,6 +8,7 @@ use Illuminate\View\Component;
 
 class Main extends Component
 {
+  
     //Set tittle attribute for this component under class name first.
     public string $title = "Playlist App";
     //
