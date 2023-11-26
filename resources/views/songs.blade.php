@@ -1,21 +1,8 @@
-<html>
-<head>
-<title> Songs</title>
-</head>
-<body>
-<h2>Song - Blade Template </h2>
-<table>
-<tr>
-<th>Title</th>
-<th>Artist</th>
-</tr>
-@foreach ($songs as $song)
-<tr>
-<td>{{ $song->title }}</td>
-<td>{{ $song->artist }}</td>
-</tr>
-@endforeach
-</table>
-</body>
+<x-layouts.main pageName="All Songs">
 
-</html>
+@section('content')
+<x-layouts.songs-list :songs="$songs">
+</x-layouts.songs-list>
+@endsection
+
+</x-layouts.main>

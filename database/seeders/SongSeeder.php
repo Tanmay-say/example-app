@@ -34,6 +34,7 @@ class SongSeeder extends Seeder
             'artist' => 'A P Hello',
             'title' => 'Jab we met ',
         ]);
+        
 
     }
 }

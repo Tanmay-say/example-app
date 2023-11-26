@@ -1,5 +1,7 @@
-<?p
-class Practical {
+<?php
+namespace practicals;
+
+class Practical{
     // Static function to print "Hello, World!"
     public static function printHello() {
         echo "Hello, World!\n";
